@@ -1,13 +1,13 @@
 import * as React from 'react';
+import { useState } from 'react';
 
-import {Dimensions, StyleSheet, View} from 'react-native';
+import { Dimensions } from 'react-native';
 import BubbleSelect, {
   Bubble,
   BubbleProps,
 } from '@vahesaroyan/react-native-bubble-select';
-import {useState} from 'react';
 
-const createEmptyBounce = ({key, width}: { key: number; width: number }) => ({
+const createEmptyBounce = ({ key, width }: { key: number; width: number }) => ({
   id: '',
   text: '',
   borderColor: '#fff',
@@ -20,8 +20,8 @@ const createEmptyBounce = ({key, width}: { key: number; width: number }) => ({
 });
 
 const fakeData: (BubbleProps & { key?: string })[] = [
-  createEmptyBounce({key: 1, width: 29}),
-  createEmptyBounce({key: 2, width: 91}),
+  createEmptyBounce({ key: 1, width: 29 }),
+  createEmptyBounce({ key: 2, width: 91 }),
   {
     id: '1',
     text: 'Routes',
@@ -29,7 +29,7 @@ const fakeData: (BubbleProps & { key?: string })[] = [
     image: 'https://picsum.photos/200/300',
     radius: 55,
   },
-  createEmptyBounce({key: 3, width: 73}),
+  createEmptyBounce({ key: 3, width: 73 }),
   {
     id: '2',
     text: 'Parties',
@@ -44,7 +44,7 @@ const fakeData: (BubbleProps & { key?: string })[] = [
     image: 'https://picsum.photos/200/300',
     radius: 60,
   },
-  createEmptyBounce({key: 4, width: 92}),
+  createEmptyBounce({ key: 4, width: 92 }),
   {
     id: '4',
     text: 'Food&Drinks',
@@ -59,7 +59,7 @@ const fakeData: (BubbleProps & { key?: string })[] = [
     image: 'https://picsum.photos/200/300',
     radius: 60,
   },
-  createEmptyBounce({key: 5, width: 95}),
+  createEmptyBounce({ key: 5, width: 95 }),
   {
     id: '6',
     text: 'Nature',
@@ -74,7 +74,7 @@ const fakeData: (BubbleProps & { key?: string })[] = [
     image: 'https://picsum.photos/200/300',
     radius: 55,
   },
-  createEmptyBounce({key: 6, width: 90}),
+  createEmptyBounce({ key: 6, width: 90 }),
   {
     id: '8',
     text: 'Parties',
