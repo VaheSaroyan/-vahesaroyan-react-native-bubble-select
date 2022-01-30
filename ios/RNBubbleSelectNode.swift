@@ -80,6 +80,10 @@ class RNBubbleSelectNodeView: UIView {
       node.selectedColor = selectedColor
     }
 
+     if let marginScale = marginScale {
+      node.marginScale = marginScale
+    }
+
     if let selectedFontColor = selectedFontColor {
       node.selectedFontColor = selectedFontColor
     }
@@ -93,12 +97,11 @@ class RNBubbleSelectNodeView: UIView {
 // MARK:- Setters
 extension RNBubbleSelectNodeView {
   @objc func setId(_ id: String?) {
-      print("id-",id)
+//       print("id-",id)
     self.id = id
   }
 
   @objc func setText(_ text: String?) {
-      print("text-",text)
     self.text = text
     updateNode()
   }
@@ -119,7 +122,6 @@ extension RNBubbleSelectNodeView {
   }
 
   @objc func setRadius(_ radius: CGFloat) {
-      print("radius-",radius)
     self.radius = radius
     updateNode()
   }
