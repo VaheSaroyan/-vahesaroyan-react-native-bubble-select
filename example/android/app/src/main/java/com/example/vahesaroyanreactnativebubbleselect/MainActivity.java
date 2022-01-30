@@ -1,4 +1,4 @@
-package com.example.vahesaroyanreactnativebubbleselect;
+package com.example.vahesaroyanvahesaroyanreactnativebubbleselect;
 
 import com.facebook.react.ReactActivity;
 
