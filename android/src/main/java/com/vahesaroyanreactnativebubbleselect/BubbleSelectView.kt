@@ -121,7 +121,7 @@ class BubbleSelectView(context: ReactContext): FrameLayout(context), LifecycleEv
     event.node = node
 
     val reactContext = context as ReactContext
-    reactContext.getNativeModule(UIManagerModule::class.java).eventDispatcher.dispatchEvent(event)
+    reactContext.getNativeModule(UIManagerModule::class.java)?.eventDispatcher?.dispatchEvent(event)
   }
 
   override fun onBubbleSelected(item: PickerItem) {
@@ -130,7 +130,7 @@ class BubbleSelectView(context: ReactContext): FrameLayout(context), LifecycleEv
     event.node = node
 
     val reactContext = context as ReactContext
-    reactContext.getNativeModule(UIManagerModule::class.java).eventDispatcher.dispatchEvent(event)
+    reactContext.getNativeModule(UIManagerModule::class.java)?.eventDispatcher?.dispatchEvent(event)
   }
 
   override fun onBubbleRemoved(item: PickerItem) {
@@ -139,6 +139,6 @@ class BubbleSelectView(context: ReactContext): FrameLayout(context), LifecycleEv
     event.item = node
 
     val reactContext = context as ReactContext
-    reactContext.getNativeModule(UIManagerModule::class.java).eventDispatcher.dispatchEvent(event)
+    reactContext.getNativeModule(UIManagerModule::class.java)?.eventDispatcher?.dispatchEvent(event)
   }
 }
