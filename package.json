@@ -1,6 +1,6 @@
 {
   "name": "@vahesaroyan/react-native-bubble-select",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "React native bubble picker",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
